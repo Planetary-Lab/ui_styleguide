@@ -1,0 +1,14 @@
+# File: .gitignore
+# Description: Ignores files within this repo
+# Dependencies: None
+#
+# @package style_guide
+
+# Ignoring installed npm dependencies
+node_modules/
+
+# Sass-cache
+.sass-cache
+
+# Mac files
+.DS_Store

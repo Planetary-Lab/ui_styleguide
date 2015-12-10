@@ -1,0 +1,8 @@
+# File: .gitignore
+# Description: Ignores files within this directory
+# Dependencies: None
+#
+# @package style_guide
+
+# Ignore all compiled files within this directory
+*.css
