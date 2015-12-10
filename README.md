@@ -21,6 +21,6 @@ Please contribute! Any and all additions and updates are welcome. In order to co
 
 The styleguide will eventually be put on the planetary-lab.org servers for easy access/reference. Once that's done, the url will be added here!
 
-## Questions/Comments/Concers
+## Questions/Comments/Concerns
 
 If you have any questions about what's contained here, or how to do anything, hit me up on Slack and I'll do my best to answer!
