@@ -1,0 +1,33 @@
+/**
+ * File: page.scss
+ * Description: General page styles
+ * Dependencies: None
+ *
+ * @package ui_styleguide
+ */
+
+/* === General === */
+.page {
+  padding-top: calc-rem(20);
+  padding-right: calc-rem(20);
+  padding-bottom: calc-rem(20);
+  padding-left: calc-rem(20);
+}
+
+/* === Sections === */
+.section { margin-bottom: calc-rem(50); }
+.section__title-link {
+  color: $color__black;
+  font-size: calc-rem(35);
+  text-decoration: none;
+
+  &:hover {
+    .section__title-hash { color: $color__black; }
+  }
+}
+.section__title-hash {
+  margin-right: calc-rem(5);
+  color: $color__grey--medium;
+  font-size: calc-rem(35);
+  @include vendor-prefix(transition, 'color .3s ease');
+}

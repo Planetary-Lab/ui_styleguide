@@ -1,0 +1,13 @@
+/**
+ * File: text.scss
+ * Description: Styles for the headings section
+ * Dependencies: None
+ *
+ * @package ui_styleguide
+ */
+
+/* === Headings List Styles === */
+.headings__heading--h1 h1 {
+  text-align: left;
+  border-bottom: none;
+}

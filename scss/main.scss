@@ -11,15 +11,22 @@
 
 /* === Helpers === */
 /* Vendor prefix functions, mixins, colors, breakpoints */
+@import 'helpers/colors';
+@import 'helpers/mixins';
 
 /* === Base === */
 /* Reset/typography */
+@import 'base/reset';
+@import 'base/typography';
 
 /* === Components === */
 /* Buttons, dropdowns, carousels */
 
 /* === Layout === */
 /* Grid, header, footer, sidebar, forms, parts of pages */
+@import 'layout/colors';
+@import 'layout/page';
+@import 'layout/text';
 
 /* === Pages === */
 /* Specific styles for individual pages */

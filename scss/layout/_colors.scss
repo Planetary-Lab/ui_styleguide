@@ -1,0 +1,51 @@
+/**
+ * File: colors.scss
+ * Description: Styles for the  colors section
+ * Dependencies: None
+ *
+ * @package ui_styleguide
+ */
+
+/* === Colors Boxes === */
+.colors__list {
+  padding-right: calc-rem(10);
+  padding-left: calc-rem(10);
+}
+.colors__color {
+  display: inline-block;
+  float: none;
+  margin-bottom: calc-rem(5);
+  padding-top: calc-rem(10);
+  padding-right: calc-rem(20);
+  padding-bottom: calc-rem(10);
+  padding-left: calc-rem(20);
+  width: auto;
+
+  &--red {
+    color: $color__white;
+    background-color: $color__red;
+  }
+  &--darkorange {
+    color: $color__white;
+    background-color: $color__orange--dark;
+  }
+  &--lightorange { background-color: $color__orange--light; }
+  &--lightgreen { background-color: $color__green--light; }
+  &--darkgreen {
+    color: $color__white;
+    background-color: $color__green--dark;
+  }
+  &--lightblue { background-color: $color__blue--light; }
+  &--mediumlightblue {
+    color: $color__white;
+    background-color: $color__blue--medium-light;
+  }
+  &--mediumblue {
+    color: $color__white;
+    background-color: $color__blue--medium;
+  }
+  &--darkblue {
+    color: $color__white;
+    background-color: $color__blue--dark;
+  }
+}

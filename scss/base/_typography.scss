@@ -1,0 +1,59 @@
+/**
+ * File: typography.scss
+ * Description: Defines the fonts for the application
+ * Dependencies: Lato
+ *
+ * @package ui_styleguide
+ */
+
+/* === Fonts === */
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+/* === Base Variables === */
+$text__family--lato: 'Lato', 'Arial', sans-serif;
+$text__size--base: 20;
+
+/* === Applying -- Body === */
+html {
+  font-family: $text__family--lato;
+  font-size: $text__size--base * 1px;
+}
+body {
+  color: $color__black;
+  font-family: $text__family--lato;
+  font-size: calc-rem(14);
+}
+
+/* === Headers === */
+%heading {
+  margin-bottom: calc-rem(15);
+  padding-bottom: calc-rem(10);
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: bold;
+}
+h1 {
+  @extend %heading;
+  font-size: calc-rem(40);
+  text-align: center;
+  border-bottom: 1px solid $color__grey--light;
+}
+h2 {
+  @extend %heading;
+  font-size: calc-rem(35);
+}
+h3 {
+  @extend %heading;
+  font-size: calc-rem(30);
+}
+h4 {
+  @extend %heading;
+  font-size: calc-rem(25);
+}
+h5 {
+  @extend %heading;
+  font-size: calc-rem(20);
+}
+h6 {
+  @extend %heading;
+  font-size: calc-rem(15);
+}

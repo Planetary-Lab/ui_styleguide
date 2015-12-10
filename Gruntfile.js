@@ -17,13 +17,13 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'css/main.css': 'sass/main.scss'
+                    'css/main.css': 'scss/main.scss'
                 }
             }
         },
         watch: {
             scripts: {
-                files: ['sass/*.scss', 'sass/*/*.scss'],
+                files: ['scss/*.scss', 'scss/*/*.scss'],
                 tasks: ['sass']
             }
         }
