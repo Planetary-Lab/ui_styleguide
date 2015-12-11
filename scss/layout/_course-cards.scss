@@ -1,0 +1,20 @@
+/**
+ * File: course-cards.scss
+ * Description: Styles for the  course-cards section
+ * Dependencies: None
+ *
+ * @package ui_styleguide
+ */
+
+/* === General Section === */
+.cards { background: $color__green--dark; }
+
+/* === Individual Cards === */
+.cards__list { text-align: center; }
+.cards__card {
+  display: inline-block;
+  float: none;
+  margin-right: calc-rem(20);
+  margin-left: calc-rem(20);
+  text-align: left;
+}

@@ -1,0 +1,51 @@
+/**
+ * File: buttons.scss
+ * Description: Defines all the styles for buttons in the application
+ * Dependencies: None
+ *
+ * @package ui_styleguide
+ */
+
+/* === Button Base === */
+%button {
+  padding-top: calc-rem(10);
+  padding-right: calc-rem(15);
+  padding-bottom: calc-rem(10);
+  padding-left: calc-rem(15);
+  font-size: calc-rem(14);
+  font-weight: bold;
+  text-decoration: none;
+  @include vendor-prefix(transition, 'background-color .3s ease');
+}
+
+.button {
+  @extend %button;
+
+  // Green Button
+  &--green {
+    color: $color__white;
+    background-color: $color__green--dark;
+
+    &:hover {
+      background-color: lighten($color__green--dark, 5);
+    }
+  }
+
+  // Blue Button
+  &--blue {
+    color: $color__black;
+    background-color: $color__blue--light;
+
+    &:hover {
+      background-color: lighten($color__blue--light, 5);
+    }
+  }
+
+  // Shadow Button
+  &--shadow {
+    box-shadow: calc-rem(-3) calc-rem(3) calc-rem(2) rgba(0,0,0,.5);
+    @include vendor-prefix(transition, 'box-shadow .3s ease, background-color .3s ease');
+
+    &:hover { box-shadow: 0 0 0 rgba(0,0,0,0); }
+  }
+}

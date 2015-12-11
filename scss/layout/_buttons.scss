@@ -1,0 +1,19 @@
+/**
+ * File: buttons.scss
+ * Description: Styles for the buttons section
+ * Dependencies: None
+ *
+ * @package ui_styleguide
+ */
+
+/* === Individual Buttons === */
+.buttons-list__button {
+  display: inline-block;
+  float: none;
+  width: auto;
+}
+.button {
+  display: inline-block;
+  margin-right: calc-rem(5);
+  margin-left: calc-rem(5);
+}

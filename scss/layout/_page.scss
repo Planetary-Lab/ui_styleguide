@@ -6,16 +6,13 @@
  * @package ui_styleguide
  */
 
-/* === General === */
-.page {
+/* === Sections === */
+.section {
   padding-top: calc-rem(20);
   padding-right: calc-rem(20);
-  padding-bottom: calc-rem(20);
+  padding-bottom: calc-rem(50);
   padding-left: calc-rem(20);
 }
-
-/* === Sections === */
-.section { margin-bottom: calc-rem(50); }
 .section__title-link {
   color: $color__black;
   font-size: calc-rem(35);
@@ -27,7 +24,7 @@
 }
 .section__title-hash {
   margin-right: calc-rem(5);
-  color: $color__grey--medium;
+  color: $color__grey--light;
   font-size: calc-rem(35);
   @include vendor-prefix(transition, 'color .3s ease');
 }

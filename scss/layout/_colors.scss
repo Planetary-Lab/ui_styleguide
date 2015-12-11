@@ -6,10 +6,19 @@
  * @package ui_styleguide
  */
 
+/* === General Section Styles === */
+.colors { background: $color__blue--dark; }
+.colors {
+  .section__title-link { color: $color__white; }
+  .section__title-link:hover .section__title-hash { color: $color__white; }
+}
+
 /* === Colors Boxes === */
 .colors__list {
   padding-right: calc-rem(10);
   padding-left: calc-rem(10);
+
+  &--colors { margin-bottom: calc-rem(20); }
 }
 .colors__color {
   display: inline-block;
@@ -21,6 +30,7 @@
   padding-left: calc-rem(20);
   width: auto;
 
+  // Colors
   &--red {
     color: $color__white;
     background-color: $color__red;
@@ -30,7 +40,9 @@
     background-color: $color__orange--dark;
   }
   &--lightorange { background-color: $color__orange--light; }
+  &--yellow { background-color: $color__yellow; }
   &--lightgreen { background-color: $color__green--light; }
+  &--mediumgreen { background-color: $color__green--medium; }
   &--darkgreen {
     color: $color__white;
     background-color: $color__green--dark;
@@ -47,5 +59,18 @@
   &--darkblue {
     color: $color__white;
     background-color: $color__blue--dark;
+  }
+
+  // Monochrome
+  &--white { background-color: $color__white; }
+  &--lightgrey { background-color: $color__grey--light; }
+  &--mediumgrey { background-color: $color__grey--medium; }
+  &--grey {
+    color: $color__white;
+    background-color: $color__grey;
+  }
+  &--black {
+    color: $color__white;
+    background-color: $color__black;
   }
 }

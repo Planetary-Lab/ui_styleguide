@@ -9,6 +9,32 @@
 /* === Fonts === */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 
+@font-face {
+	font-family: 'planetlab';
+	src:url('fonts/planetlab.eot?uvjbtt');
+	src:url('fonts/planetlab.eot?uvjbtt#iefix') format('embedded-opentype'),
+		url('fonts/planetlab.ttf?uvjbtt') format('truetype'),
+		url('fonts/planetlab.woff?uvjbtt') format('woff'),
+		url('fonts/planetlab.svg?uvjbtt#planetlab') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="pl-"], [class*=" pl-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'planetlab' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.pl-drop:before { content: "\e900"; }
+
 /* === Base Variables === */
 $text__family--lato: 'Lato', 'Arial', sans-serif;
 $text__size--base: 20;

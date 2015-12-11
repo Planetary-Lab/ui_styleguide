@@ -1,0 +1,87 @@
+/**
+ * File: course-cards.scss
+ * Description: Defines all the styles for course cards
+ * Dependencies: None
+ *
+ * @package ui_styleguide
+ */
+
+/* === General Card Styles === */
+.card {
+  height: calc-rem(384);
+  padding-top: calc-rem(15);
+  padding-right: calc-rem(15);
+  padding-bottom: calc-rem(15);
+  padding-left: calc-rem(15);
+  width: calc-rem(288);
+  background: $color__white;
+  box-shadow: calc-rem(-8) calc-rem(8) calc-rem(2) rgba(0,0,0,.5);
+}
+
+/* === Card Image === */
+.card__image {
+  height: calc-rem(158);
+  margin-bottom: calc-rem(15);
+  width: calc-rem(257);
+
+}
+.card__image-image {
+  height: auto;
+  width: 100%;
+}
+
+/* === Card Description === */
+.card__description {
+  height: calc-rem(114);
+  margin-bottom: calc-rem(15);
+  padding-top: calc-rem(10);
+  padding-right: calc-rem(10);
+  padding-bottom: calc-rem(10);
+  padding-left: calc-rem(10);
+  background: $color__green--light;
+}
+h4.card__title {
+  margin-bottom: calc-rem(5);
+  padding-bottom: 0;
+  font-weight: normal;
+}
+.card__description-text {
+  font-size: calc-rem(18);
+  line-height: 1.2;
+}
+
+/* === Card Details === */
+.details__detail {
+  height: calc-rem(50);
+  padding-top: calc-rem(5);
+  padding-bottom: calc-rem(5);
+  width: calc-rem(78);
+  color: $color__white;
+  text-align: center;
+  background: $color__blue--dark;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    float: none;
+    height: 100%;
+    vertical-align: middle;
+    width: 0;
+    margin-left: -.25rem;
+  }
+  &--sphere {
+    margin-right: calc-rem(11);
+
+    .details__detail-inner { font-size: calc-rem(25); }
+  }
+  &--grade { margin-right: calc-rem(11); }
+  &--time {
+    .details__detail-inner { font-size: calc-rem(15); }
+  }
+}
+.details__detail-inner {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}
+
